@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import MovieList from "./components/MovieList";
+import MovieHeading from "./components/MovieHeading";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <div>
+      <MovieHeading heading='FilmFlow'/>
       <MovieList movies={movies} />
     </div>
   );
