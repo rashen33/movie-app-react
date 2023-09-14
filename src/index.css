@@ -3,3 +3,17 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+@layer base{
+    body{
+        @apply font-[Poppins];
+        background-color: #141414;
+    }
+
+
+
+    li{
+        @apply px-4;
+        @apply cursor-pointer
+    }
+}
