@@ -6,6 +6,7 @@ import AddFavourites from "./components/AddFavourites";
 
 function App() {
   const [movies, setMovies] = useState([]);
+  const [favourites, setFavourits] = useState([])
   const [searchValue, setSearchValue] = useState("");
 
   const getMovieRequest = async (searchValue) => {
@@ -22,12 +23,17 @@ function App() {
   useEffect(() => {
     getMovieRequest(searchValue);
   }, [searchValue]);
+  
+  const AddFavouriteMovie = (movie) => {
+    const newFavouriteList = [...favourites, movie];
+    setFavourits(newFavouriteList);
+  }
 
   return (
     <div>
       <MovieHeading heading="FilmFlow ." />
       <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
-      <MovieList movies={movies} favouriteComponent={AddFavourites} />
+      <MovieList movies={movies} favouriteComponent={AddFavourites} handleFavouriteClick={AddFavouriteMovie} />
     </div>
   );
 }
