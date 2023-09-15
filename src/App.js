@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import MovieList from "./components/MovieList";
 import MovieHeading from "./components/MovieHeading";
 import SearchBox from "./components/SearchBox";
+import AddFavourites from "./components/AddFavourites";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -17,7 +18,7 @@ function App() {
       setMovies(responseJson.Search);
     }
   };
-  //a test comment
+
   useEffect(() => {
     getMovieRequest(searchValue);
   }, [searchValue]);
@@ -26,7 +27,7 @@ function App() {
     <div>
       <MovieHeading heading="FilmFlow ." />
       <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
-      <MovieList movies={movies} />
+      <MovieList movies={movies} favouriteComponent={AddFavourites} />
     </div>
   );
 }
