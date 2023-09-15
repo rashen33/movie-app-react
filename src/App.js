@@ -17,7 +17,7 @@ function App() {
       setMovies(responseJson.Search);
     }
   };
-
+  //a test comment
   useEffect(() => {
     getMovieRequest(searchValue);
   }, [searchValue]);
