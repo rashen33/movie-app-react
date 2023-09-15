@@ -3,10 +3,11 @@ import MovieList from "./components/MovieList";
 import MovieHeading from "./components/MovieHeading";
 import SearchBox from "./components/SearchBox";
 import AddFavourites from "./components/AddFavourites";
+import RemoveFavourites from "./components/RemoveFavourites";
 
 function App() {
   const [movies, setMovies] = useState([]);
-  const [favourites, setFavourits] = useState([])
+  const [favourites, setFavourits] = useState([]);
   const [searchValue, setSearchValue] = useState("");
 
   const getMovieRequest = async (searchValue) => {
@@ -23,9 +24,16 @@ function App() {
   useEffect(() => {
     getMovieRequest(searchValue);
   }, [searchValue]);
-  
-  const AddFavouriteMovie = (movie) => {
+
+  const addFavouriteMovie = (movie) => {
     const newFavouriteList = [...favourites, movie];
+    setFavourits(newFavouriteList);
+  };
+
+  const removeFavouriteMovie = (movie) => {
+    const newFavouriteList = favourites.filter(
+      (favourite) => favourite.imdbID != movie.imdbID
+    );
     setFavourits(newFavouriteList);
   }
 
@@ -33,7 +41,17 @@ function App() {
     <div>
       <MovieHeading heading="FilmFlow ." />
       <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
-      <MovieList movies={movies} favouriteComponent={AddFavourites} handleFavouriteClick={AddFavouriteMovie} />
+      <MovieList
+        movies={movies}
+        favouriteComponent={AddFavourites}
+        handleFavouriteClick={addFavouriteMovie}
+      />
+      <MovieHeading heading="Favourites" />
+      <MovieList
+        movies={favourites}
+        favouriteComponent={RemoveFavourites}
+        handleFavouriteClick={removeFavouriteMovie}
+      />
     </div>
   );
 }
