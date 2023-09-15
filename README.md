@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# FilmFlex 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Preview Link 
+https://rashen33.github.io/filmflow-react/
 
-## Available Scripts
+## Description
+FilmFlex is a user-friendly movie app designed for searching and managing favorite movies. It utilizes React.js for the frontend to enhance the user interface, implements Tailwind CSS for responsive and visually appealing design, and integrates The OMDb API for accessing movie information.
 
-In the project directory, you can run:
+## Key Features
+- **Movie Search:** Allows users to search for any movie.
+- **Favorite Management:** Enables users to add and remove movies from their favorites.
+- **User-friendly Interface:** Offers an intuitive and easy-to-navigate user interface.
 
-### `npm start`
+## Development
+- Developed the frontend using React.js, ensuring a responsive and dynamic user experience.
+- Implemented Tailwind CSS for a sleek and visually appealing design.
+- Integrated The OMDb API to fetch movie data, enhancing the app's functionality.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Impact
+- Created a functional movie app that simplifies movie searching and favorite management for users.
+- Enhanced my skills in React.js, Tailwind CSS, and API integration.
+- Demonstrated the ability to build user-centric web applications.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
+- React.js
+- Tailwind CSS
+- The OMDb API
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## UI
+![image](https://github.com/rashen33/filmflow-react/assets/128305496/dee087d6-e839-4657-a3f7-2ac33a93434c)
