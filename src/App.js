@@ -26,11 +26,9 @@ function App() {
   }, [searchValue]);
 
   useEffect(() => {
-    const movieFavourites = JSON.parse(
-      localStorage.getItem('my-fav')
-    );
+    const movieFavourites = JSON.parse(localStorage.getItem("my-fav"));
     setFavourits(movieFavourites);
-  },[]);
+  }, []);
 
   const saveToLocalStorage = (items) => {
     localStorage.setItem("my-fav", JSON.stringify(items));
@@ -52,15 +50,18 @@ function App() {
 
   return (
     <div>
+      <div className="w-f h-[80px] flex justify-between items-center">
       <MovieHeading heading="FilmFlow ." />
       <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
+      </div>
+
       <MovieList
         movies={movies}
         favouriteComponent={AddFavourites}
         handleFavouriteClick={addFavouriteMovie}
       />
       <MovieHeading heading="Favourites" />
-      <MovieList
+      <MovieList 
         movies={favourites}
         favouriteComponent={RemoveFavourites}
         handleFavouriteClick={removeFavouriteMovie}
