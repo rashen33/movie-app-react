@@ -19,7 +19,9 @@ function App() {
     if (responseJson.Search) {
       setMovies(responseJson.Search);
     }
-  };
+  }; 
+
+  //Use Effect Hooks
 
   useEffect(() => {
     getMovieRequest(searchValue);
@@ -34,6 +36,7 @@ function App() {
     localStorage.setItem("my-fav", JSON.stringify(items));
   };
 
+  //Adding and removing favourits from the list
   const addFavouriteMovie = (movie) => {
     const newFavouriteList = [...favourites, movie];
     setFavourits(newFavouriteList);
