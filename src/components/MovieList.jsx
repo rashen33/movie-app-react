@@ -5,7 +5,7 @@ const MovieList = (props) => {
   return (
     <div>
       <div className="flex items-center">
-        {props.movies.map((movie) => (
+        {props?.movies.map((movie) => (
           <div className="w-[200px]   inline-block cursor-pointer hover:scale-105 ease-in-out duration-300 mx-1">
             <img className="object-cover" src={movie.Poster} alt="poster-img" />
             <div

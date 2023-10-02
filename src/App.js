@@ -29,7 +29,9 @@ function App() {
 
   useEffect(() => {
     const movieFavourites = JSON.parse(localStorage.getItem("my-fav"));
-    setFavourits(movieFavourites);
+    if(movieFavourites) {
+      setFavourits(movieFavourites);
+    }
   }, []);
 
   const saveToLocalStorage = (items) => {
@@ -38,9 +40,8 @@ function App() {
 
   //Adding and removing favourits from the list
   const addFavouriteMovie = (movie) => {
-    const newFavouriteList = [...favourites, movie];
-    setFavourits(newFavouriteList);
-    saveToLocalStorage(newFavouriteList);
+    setFavourits(prev => [...prev,movie]);
+    saveToLocalStorage([...favourites,movie]);
   };
 
   const removeFavouriteMovie = (movie) => {
