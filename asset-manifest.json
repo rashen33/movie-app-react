@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/filmflow-react/static/css/main.1fd5c743.css",
-    "main.js": "/filmflow-react/static/js/main.1adead98.js",
-    "index.html": "/filmflow-react/index.html",
-    "main.1fd5c743.css.map": "/filmflow-react/static/css/main.1fd5c743.css.map",
-    "main.1adead98.js.map": "/filmflow-react/static/js/main.1adead98.js.map"
+    "main.css": "/movie-app-react/static/css/main.1fd5c743.css",
+    "main.js": "/movie-app-react/static/js/main.1adead98.js",
+    "index.html": "/movie-app-react/index.html",
+    "main.1fd5c743.css.map": "/movie-app-react/static/css/main.1fd5c743.css.map",
+    "main.1adead98.js.map": "/movie-app-react/static/js/main.1adead98.js.map"
   },
   "entrypoints": [
     "static/css/main.1fd5c743.css",
