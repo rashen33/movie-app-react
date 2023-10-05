@@ -27,4 +27,5 @@ FilmFlex is a user-friendly movie app designed for searching and managing favori
 - The OMDb API
 
 ## UI
-![image](https://github.com/rashen33/filmflow-react/assets/128305496/dee087d6-e839-4657-a3f7-2ac33a93434c)
+![image](https://github.com/rashen33/movie-app-react/assets/128305496/c5168ba4-a38b-429c-9d5a-8766f67b4997)
+
