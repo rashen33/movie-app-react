@@ -10,6 +10,14 @@ FilmFlex is a user-friendly movie app designed for searching and managing favori
 - **Movie Search:** Allows users to search for any movie.
 - **Favorite Management:** Enables users to add and remove movies from their favorites.
 - **User-friendly Interface:** Offers an intuitive and easy-to-navigate user interface.
+- **Updated UX Includes:**
+<ul>
+    <li>Consistent Dark Mode throughout app</li>
+    <li>Medium Blue is used as a secondary color to differetiate from other media competitors.</li>
+    <li>Users Navigation Include: Trending Movies, Favorites, & Account Details</li>
+    <li>Users can view where to stream the movie, read other user reviews, & other basic details regarding the film</li>
+</ul>
+
 
 ## Development
 - Developed the frontend using React.js, ensuring a responsive and dynamic user experience.
