@@ -2,9 +2,9 @@
 
 ## Preview Link 
 [https://rashen33.github.io/movie-app-react/](https://rashen33.github.io/movie-app-react/)
-<br>
 Login Screen (updated: Oct. 28th)
-<img src="uiAssets/filmFlexLogin.png" alt="New UI Login" width="240" height="520">
+<be>
+<img src="uiAssets/filmFlexLogin.png" alt="New UI Login" width="197" height="426">
 
 
 
