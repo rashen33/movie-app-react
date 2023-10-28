@@ -3,7 +3,7 @@
 ## Preview Link 
 [https://rashen33.github.io/movie-app-react/](https://rashen33.github.io/movie-app-react/)
 Login Screen (updated: Oct. 28th)
-
+- Image here
 
 ## Description
 FilmFlex is a user-friendly movie app designed for searching and managing favorite movies. It utilizes React.js for the frontend to enhance the user interface, implements Tailwind CSS for responsive and visually appealing design, and integrates The OMDb API for accessing movie information.
