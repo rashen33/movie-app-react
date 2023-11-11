@@ -11,7 +11,7 @@ function App() {
   const [searchValue, setSearchValue] = useState("");
 
   const getMovieRequest = async (searchValue) => {
-    const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=449ca763`;
+    const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=${process.env.REACT_APP_IMDB_KEY}`;
 
     const response = await fetch(url);
     const responseJson = await response.json();
@@ -65,7 +65,7 @@ function App() {
       />
       <MovieHeading heading="Favourites" />
       <MovieList 
-        movies={favourites}
+        movies={favourites || []}
         favouriteComponent={RemoveFavourites}
         handleFavouriteClick={removeFavouriteMovie}
       />
